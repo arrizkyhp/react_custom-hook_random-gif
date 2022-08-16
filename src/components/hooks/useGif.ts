@@ -10,7 +10,6 @@ const useGif = (tag?: string) => {
     const [loading, setLoading] = useState<boolean>(true);
 
     const fetchGif = async (tag?: string) => {
-
         const { data } = await axios.get(tag ? `${url}&tag=${tag}` : url);
 
         const imageSrc = data.data.images.downsized_large.url;

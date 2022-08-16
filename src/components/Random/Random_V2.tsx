@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { useGif } from "./hooks";
-import Loading from "./partials/Loading";
+import { useGif } from "../hooks";
+import Loading from "../partials/Loading";
 
 const Random_V2 = () => {
   const { gif, title, loading, fetchGif, setLoading } = useGif();
